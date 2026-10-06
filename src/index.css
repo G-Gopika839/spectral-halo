@@ -1,0 +1,51 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+/* Smooth font + better rendering */
+@layer base {
+    html {
+        scroll-behavior: smooth;
+    }
+
+    body {
+        @apply bg-slate-100 dark:bg-slate-900 text-gray-900 dark:text-white antialiased;
+    }
+
+    h1,
+    h2,
+    h3,
+    h4 {
+        @apply font-bold tracking-tight;
+    }
+}
+
+/* Custom reusable components */
+@layer components {
+    .glass-card {
+        @apply bg-white/60 dark:bg-slate-800/60 backdrop-blur-lg shadow-xl rounded-2xl border border-white/20 dark:border-slate-700 transition-all duration-300;
+    }
+
+    .primary-btn {
+        @apply px-6 py-2 rounded-xl font-medium bg-gradient-to-r from-indigo-500 to-blue-500 text-white shadow-md hover:scale-105 hover:shadow-lg transition-all duration-300;
+    }
+
+    .section-container {
+        @apply max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 py-10;
+    }
+
+    /* Form input fields */
+    .input-field {
+        @apply block w-full px-4 py-3 pr-10 text-gray-900 dark:text-white bg-white dark:bg-gray-800 border border-gray-300 dark:border-gray-600 rounded-lg focus:ring-2 focus:ring-indigo-500 focus:border-transparent placeholder-gray-400 dark:placeholder-gray-500 transition-all duration-200;
+    }
+
+    /* Primary button */
+    .btn-primary {
+        @apply w-full px-6 py-3 text-white font-semibold rounded-lg bg-gradient-to-r from-indigo-600 to-purple-600 hover:from-indigo-700 hover:to-purple-700 focus:outline-none focus:ring-4 focus:ring-indigo-300 transition-all duration-300 disabled:opacity-50 disabled:cursor-not-allowed;
+    }
+
+    /* Secondary button */
+    .btn-secondary {
+        @apply w-full px-6 py-3 text-gray-700 dark:text-gray-300 font-semibold rounded-lg bg-gray-100 dark:bg-gray-700 hover:bg-gray-200 dark:hover:bg-gray-600 focus:outline-none focus:ring-4 focus:ring-gray-300 transition-all duration-300;
+    }
+}
