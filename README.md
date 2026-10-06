@@ -1,16 +1,49 @@
-# React + Vite
+Spectral Halo
 
-This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
+AI-Driven Student Engagement and Learning Behaviour Analysis Platform
 
-Currently, two official plugins are available:
+About the Project
 
-- [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react) uses [Babel](https://babeljs.io/) (or [oxc](https://oxc.rs) when used in [rolldown-vite](https://vite.dev/guide/rolldown)) for Fast Refresh
-- [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react-swc) uses [SWC](https://swc.rs/) for Fast Refresh
+Online learning platforms often cannot determine whether students are genuinely engaged or simply present. Spectral Halo is an AI-driven platform designed to analyze student behaviour during online classes, courses, and assessments.
 
-## React Compiler
+The system uses computer vision and behavioural analytics to identify indicators such as attention level, distraction, drowsiness, tab switching, and interaction patterns.
 
-The React Compiler is not enabled on this template because of its impact on dev & build performances. To add it, see [this documentation](https://react.dev/learn/react-compiler/installation).
+Instead of focusing only on malpractice detection, the platform generates engagement scores, learning authenticity metrics, and performance insights. It can provide focus alerts, pause learning sessions based on detected behaviour, and help correlate learning behaviour with assessment outcomes.
 
-## Expanding the ESLint configuration
+A personalized dashboard allows students to understand their learning patterns and improve their concentration.
 
-If you are developing a production application, we recommend using TypeScript with type-aware lint rules enabled. Check out the [TS template](https://github.com/vitejs/vite/tree/main/packages/create-vite/template-react-ts) for information on how to integrate TypeScript and [`typescript-eslint`](https://typescript-eslint.io) in your project.
+Key Features
+
+- Student attention and engagement analysis
+- Distraction detection
+- Drowsiness detection
+- Tab-switching monitoring
+- Interaction pattern analysis
+- Engagement score generation
+- Learning behaviour insights
+- Focus alerts
+- Personalized student dashboard
+- Correlation of learning behaviour with assessment performance
+
+Technologies Used
+
+- React
+- Vite
+- JavaScript
+- HTML
+- CSS
+- Computer Vision
+- Behavioural Analytics
+
+How to Run
+
+npm install
+npm run dev
+
+Open the local URL displayed in the terminal to view the application.
+
+Project Goal
+
+The goal of Spectral Halo is to move online education from passive content delivery toward intelligent and adaptive learning by using real-time behavioural analysis.
+
+
